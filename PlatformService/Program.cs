@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using PlatformService.Data;
+using PlatformService.SyncDataServices.Http;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,6 +10,8 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 });
 
 builder.Services.AddScoped<IPlatformRepository, PlatformRepository>();
+
+builder.Services.AddHttpClient<ICommandDataClient, HttpCommandDataClient>();
 
 // Add services to the container.
 builder.Services.AddControllers();
