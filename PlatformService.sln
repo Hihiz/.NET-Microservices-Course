@@ -5,7 +5,7 @@ VisualStudioVersion = 17.4.33103.184
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlatformService", "PlatformService\PlatformService.csproj", "{6FDFF981-E015-400D-AF5B-6EDFF0D4A55D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandService", "CommandService\CommandService.csproj", "{A79D98DF-F733-439F-A590-67AEA8D94627}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommandService", "CommandService\CommandService.csproj", "{A79D98DF-F733-439F-A590-67AEA8D94627}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
