@@ -29,7 +29,7 @@ builder.Services.AddScoped<IPlatformRepository, PlatformRepository>();
 
 builder.Services.AddHttpClient<ICommandDataClient, HttpCommandDataClient>();
 builder.Services.AddSingleton<IMessageBusClient, MessageBusClient>();
-builder.Services.AddGrpc();
+//builder.Services.AddGrpc();
 
 // Add services to the container.
 builder.Services.AddControllers();
@@ -60,7 +60,7 @@ app.MapControllers();
 
 app.UseEndpoints(endpoints =>
 {
-    endpoints.MapGrpcService<GrpcPlatformService>();
+    //endpoints.MapGrpcService<GrpcPlatformService>();
 
     endpoints.MapGet("/protos/platform.proto", async content =>
     {
