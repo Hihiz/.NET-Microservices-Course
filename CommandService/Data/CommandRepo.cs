@@ -1,4 +1,5 @@
 ﻿using CommandService.Models;
+using System;
 
 namespace CommandService.Data
 {
@@ -30,6 +31,11 @@ namespace CommandService.Data
             }
 
             _db.Platforms.Add(platform);
+        }
+
+        public bool ExternalPlatformExist(int externalPlatformId)
+        {
+            return _db.Platforms.Any(p => p.ExternalId == externalPlatformId);
         }
 
         public IEnumerable<Platform> GetAllPlatforms()
